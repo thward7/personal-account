@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SFProBold';
+  src: url('./fonts/SFProText-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'SFProMedium';
+  src: url('./fonts/SFProText-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'SFProSemibold';
+  src: url('./fonts/SFProText-Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'SFProRegular';
+  src: url('./fonts/SFProText-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RetroSailing';
+  src: url('./fonts/RetroSailing.ttf');
+}
+
+body {
+  font-family: 'SFProRegular';
+  background-image: url('assets/background.svg');
+  background-size: cover;
+  color: white;
+  cursor: default;
+}
+
+.widgets {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  grid-template-areas:
+    'calendar calendar profile'
+    'orderlist messages messages'
+    'orderlist timetable timetable'
+    'ordergenerator ordergenerator filelist';
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem;
+}
+
+.widget {
+  padding: 2.5rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.25s ease;
+}
+
+.widget:hover {
+  transform: scale(1.02);
+}
+
+.calendar {
+  grid-area: calendar;
+}
+
+.profile {
+  grid-area: profile;
+}
+
+.orderlist {
+  grid-area: orderlist;
+}
+
+.messages {
+  grid-area: messages;
+}
+
+.timetable {
+  grid-area: timetable;
+}
+
+.ordergenerator {
+  grid-area: ordergenerator;
+}
+
+.filelist {
+  grid-area: filelist;
+}

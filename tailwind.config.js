@@ -4,8 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        graphit: '#1D1D28',
-        vstrecha: '#355170',
+        'own-graphit': '#1D1D28',
+        'own-blue': '#355170',
+        'own-transparent': 'rgba(0, 0, 0, 0.3)',
+        'own-red': '#BE5858',
+        'own-gray': '#BEBEBE',
+        'own-sky': '#C3D7DB',
+        'own-orange': '#FBDABB',
+        'own-white': '#EFF5FC',
       },
       fontFamily: {
         // forum: ['Forum', 'serif'],

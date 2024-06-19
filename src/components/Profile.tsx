@@ -12,16 +12,14 @@ const Profile = () => {
           <img className='size-5' src={IconSettings} />
         </button>
         <img
-          className='scale-animation size-36 cursor-pointer overflow-hidden rounded-full object-cover'
+          className='scale-animation size-36 overflow-hidden rounded-full object-cover'
           src={UserAvatar}
         />
       </div>
       <div className='flex flex-col space-y-2'>
         <div>
-          <p className='cursor-pointer font-sfprobold text-2xl text-white'>
-            Budd Dwyer
-          </p>
-          <p className='cursor-pointer font-sfproregular text-xs text-own-gray text-opacity-40'>
+          <p className='font-sfprobold text-2xl text-white'>Budd Dwyer</p>
+          <p className='font-sfproregular text-xs text-own-gray text-opacity-40'>
             johndee@gmail.com
           </p>
         </div>

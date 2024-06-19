@@ -11,6 +11,14 @@ const OrderList = () => {
           <div>Company 2</div>
           <div>11.05</div>
         </div>
+        <div className='list-element flex justify-between bg-own-transparent px-6 py-4 transition-all'>
+          <div>Company 3</div>
+          <div>01.12</div>
+        </div>
+        <div className='list-element flex justify-between bg-own-transparent px-6 py-4 transition-all'>
+          <div>Company 4</div>
+          <div>12.04</div>
+        </div>
       </div>
     </div>
   )

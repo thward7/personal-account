@@ -3,7 +3,7 @@ import IconCopy from '../assets/icon-copy.svg'
 
 const OrderGenerator = () => {
   return (
-    <div className='ordergenerator widget flex flex-col space-y-5 bg-gradient-to-b from-white to-white text-own-graphit'>
+    <div className='ordergenerator widget flex flex-col space-y-5 bg-gradient-to-b from-white to-white text-own-graphit max-[680px]:hidden'>
       <div className='h-4/5 w-full rounded-3xl bg-own-white p-5'>
         <button className='float-end mb-3 ml-3'>
           <img
@@ -11,7 +11,7 @@ const OrderGenerator = () => {
             className='size-6 transition-all hover:scale-[1.13]'
           />
         </button>
-        <p className='text-justify text-sm'>
+        <p className='select-text text-justify text-sm'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
           explicabo reprehenderit nostrum enim at itaque provident expedita, rem
           ratione soluta qui vitae alias fugiat veniam excepturi velit? Eveniet,
@@ -22,6 +22,8 @@ const OrderGenerator = () => {
         <Select label='Company' className='w-1/4' radius='full'>
           <SelectItem key={'Company 1'}>Company 1</SelectItem>
           <SelectItem key={'Company 2'}>Company 2</SelectItem>
+          <SelectItem key={'Company 3'}>Company 3</SelectItem>
+          <SelectItem key={'Company 4'}>Company 4</SelectItem>
         </Select>
         <Input
           type='text'

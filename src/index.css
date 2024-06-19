@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: 'SFProRegular';
-  background-image: url('assets/background.svg');
+  background: url('assets/background.svg') no-repeat center center fixed;
   background-size: cover;
   cursor: default;
 }
@@ -56,12 +56,35 @@ body {
   padding: 2.5rem;
 }
 
+@media (max-width: 1000px) {
+  .widgets {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    grid-template-areas:
+      'profile filelist'
+      'calendar calendar'
+      'messages messages'
+      'timetable timetable'
+      'ordergenerator ordergenerator'
+      'orderlist orderlist';
+  }
+}
+
+@media (max-width: 800px) {
+  .widgets {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .widget {
   padding: 2.5rem;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.25s ease;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  min-width: 300px;
+  max-height: 400px;
 }
 
 .widget:hover {
@@ -79,6 +102,7 @@ body {
 
 .orderlist {
   grid-area: orderlist;
+  max-height: none;
 }
 
 .messages {
@@ -99,7 +123,6 @@ body {
 
 .button-element {
   display: flex;
-  cursor: pointer;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;

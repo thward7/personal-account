@@ -7,7 +7,7 @@ const Profile = () => {
       <div className='flex justify-between'>
         <button
           type='submit'
-          className='button-element bg-own-transparent scale-animation size-8'
+          className='button-element scale-animation size-8 bg-own-transparent'
         >
           <img className='size-5' src={IconSettings} />
         </button>
@@ -18,14 +18,16 @@ const Profile = () => {
       </div>
       <div className='flex flex-col space-y-2'>
         <div>
-          <p className='cursor-pointer font-sfprobold text-2xl'>Budd Dwyer</p>
-          <p className='text-own-gray cursor-pointer font-sfproregular text-xs text-opacity-40'>
+          <p className='cursor-pointer font-sfprobold text-2xl text-white'>
+            Budd Dwyer
+          </p>
+          <p className='cursor-pointer font-sfproregular text-xs text-own-gray text-opacity-40'>
             johndee@gmail.com
           </p>
         </div>
         <button
           type='submit'
-          className='button-element bg-own-transparent hover:bg-own-red w-1/3 px-12 py-1 text-sm transition-all'
+          className='button-element w-1/3 bg-own-transparent px-12 py-1 text-sm text-white transition-all hover:bg-own-red'
         >
           Logout
         </button>

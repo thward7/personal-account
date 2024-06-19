@@ -27,10 +27,6 @@
   src: url('./fonts/RetroSailing.ttf');
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 html {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -41,7 +37,6 @@ body {
   font-family: 'SFProRegular';
   background-image: url('assets/background.svg');
   background-size: cover;
-  color: white;
   cursor: default;
 }
 
@@ -105,7 +100,6 @@ body {
 .button-element {
   display: flex;
   cursor: pointer;
-  color: white;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
@@ -141,4 +135,22 @@ body {
   font-family: SFProBold, serif;
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.scroll-element {
+  overflow-y: auto;
+  /* padding-left: 0.5rem;
+  padding-right: 0.5rem; */
+}
+
+.scroll-element::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scroll-element::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+}
+
+.scroll-element::-webkit-scrollbar-thumb:hover {
+  background: grey;
 }

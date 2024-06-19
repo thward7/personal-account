@@ -28,7 +28,7 @@ class Clock extends Component<{}, State> {
 
   render() {
     return (
-      <div className='text-base'>
+      <div className='text-base text-white'>
         <h2>
           {this.state.time.toLocaleTimeString([], {
             hour: '2-digit',

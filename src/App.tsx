@@ -1,5 +1,6 @@
 import Calendar from './components/Calendar'
 import FileList from './components/FileList'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Messages from './components/Messages'
 import OrderGenerator from './components/OrderGenerator'
@@ -12,14 +13,15 @@ function App() {
     <>
       <Header />
       <div className='widgets'>
-        <Calendar />
         <Profile />
-        <OrderList />
+        <Calendar />
         <Messages />
+        <OrderList />
         <Schedule />
-        <OrderGenerator />
         <FileList />
+        <OrderGenerator />
       </div>
+      <Footer />
     </>
   )
 }
